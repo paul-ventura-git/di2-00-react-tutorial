@@ -65,6 +65,7 @@ function App() {
       <Counter></Counter>
 
       <h2 style={{backgroundColor:'plum'}}>10. useEffect: api calling</h2>
+      {/*<ShowData></ShowData>*/}
       <ShowDataCharacters></ShowDataCharacters>
 
       <h2 style={{backgroundColor:'plum'}}>11. Rendering API data</h2>

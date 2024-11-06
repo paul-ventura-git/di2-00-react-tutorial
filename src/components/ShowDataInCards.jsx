@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { getList } from '../services/characters';
 
 export default function ShowDataCharacters() {
-  const [list, setList] = useState([]);
+  const [arregloDeObjetos, setArregloDeObjetos] = useState([]);
 
   useEffect(() => {
     let mounted = true;
     getList()
       .then(items => {
         if(mounted) {
-          setList(items)
+          setArregloDeObjetos(items)
         }
       })
     return () => mounted = false;
@@ -17,10 +17,10 @@ export default function ShowDataCharacters() {
 
   return(
     <div className="wrapper">
-     <h1>My Comment Table</h1>
+     <h1>My List of Cards</h1>
      <ul>
         {          
-          list.map(item => {
+          arregloDeObjetos.map(item => {
             return (
               <div key={item.id} className="card" style={{width: "18rem"}}>
                 <img src={item.image} className="card-img-top" alt="..."></img>

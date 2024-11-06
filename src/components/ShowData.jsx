@@ -16,11 +16,11 @@ export default function ShowData() {
   }, [])
 
   return(
-    <div className="wrapper">
-     <h1>My Comment list</h1>
-     <ul>
-       {list.map(item => <li key={item.id}>{item.id},{item.name},{item.email},{item.body}</li>)}
-     </ul>
-   </div>
+    <div>
+      <h1>My Comment list</h1>
+      <ul>
+        {list.map(item => <li key={item.id}>    {item.id},{item.email}     </li>)}
+      </ul>
+    </div>
   )
 }

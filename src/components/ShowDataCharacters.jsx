@@ -27,6 +27,9 @@ export default function ShowDataCharacters() {
               <tr key={item.id}>
                 <td>{item.name}</td>
                 <td>{item.species}</td>
+                <td>{item.gender}</td>
+                <td>{item.origin.name}</td>
+                <td>{item.location.name}</td>
               </tr>
             )
           }
