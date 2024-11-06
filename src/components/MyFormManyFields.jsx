@@ -7,7 +7,17 @@ export default function MyFormManyFields() {
   const handleChange = (event) => {
     const v_name = event.target.name;
     const v_value = event.target.value;
-    setInputs(values => ({...values, [v_name]: v_value})); // {name: "valor1", value: "valor2"}
+    setInputs(values => ({...values, [v_name]: v_value})); 
+    /*
+    {
+      username: "<inputs.username>"
+      age: "<inputs.age>"
+    },
+    {
+      ........
+    }
+      ........
+    */
     console.log(inputs);
   }
 
@@ -22,7 +32,7 @@ export default function MyFormManyFields() {
         <input
           type="text"
           name="username"
-          value={inputs.username || ""}
+          value={inputs.username || ""} // {username: "<value>"}
           onChange={handleChange}
         />
       </label>
@@ -30,7 +40,7 @@ export default function MyFormManyFields() {
         <input
           type='number'
           name='age'
-          value={inputs.age || ""}
+          value={inputs.age || ""} //const inputs = {username: <value>, age: <value>}
           onChange={handleChange}
         />
       </label>

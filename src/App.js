@@ -1,5 +1,6 @@
 import Baseball from "./components/Baseball";
 import Car from "./components/Car";
+import Counter from "./components/Counter";
 import Football from "./components/Football";
 import Garage from "./components/Garage";
 import Garden from "./components/Garden";
@@ -10,11 +11,16 @@ import MyForm from "./components/MyForm";
 import MyFormManyFields from "./components/MyFormManyFields";
 import MyFormSelect from "./components/MyFormSelect";
 import MyFormTextArea from "./components/MyFormTextArea";
+import ShowData from "./components/ShowData";
+import ShowDataCharacters from "./components/ShowDataCharacters";
+import ShowDataInTable from "./components/ShowDataInTable";
+import ShowDataInCards from "./components/ShowDataInCards";
+import Timer from "./components/Timer";
 
 function App() {
-  const my_cookware = ['Cutting board','Can opener','Measuring spoons', 'Fork'];
+  const my_cookware = ['Cutting board','Can opener','Measuring spoons'];
   const v_genres = [
-    {id:1, description: "Science fiction"}, 
+    {id:1, description: "Science fiction"}, // {"id":1, "nombre":"Humberto"}
     {id:2, description: "Comedy"},
     {id:3, description: "History"},
     {id:4, description: "Thrillers"}
@@ -25,16 +31,16 @@ function App() {
       <h1>Tutorial de React</h1>
 
       <h2 style={{backgroundColor:'lightBlue'}}>1. Props</h2>
-      <Car colorCarro="green" marcaCarro="Lamborghini" />
+      <Car colorCarro="purple" marcaCarro="Toyota" />
       <Garage tamanioGarage="big" />
 
-      <h2 style={{backgroundColor:'lightBlue'}}>2. Props with events</h2>
+      <h2 style={{backgroundColor:'lightBlue'}}>2. Props with events (functions)</h2>
       <Football />
       <Baseball />
 
       <h2 style={{backgroundColor:'lightBlue'}}>3. Props with booleans</h2>
-      <Goal esGol={undefined}/>
-      <Garden arboles="asdasdasd"/>
+      <Goal esGol={NaN}/>
+      <Garden arboles={null}/>
 
       <h2 style={{backgroundColor:'lightBlue'}}>4. Props with arrays</h2> 
       <Kitchen utensilios={my_cookware} />
@@ -51,6 +57,18 @@ function App() {
       <h2 style={{backgroundColor:'lightBlue'}}>8. useState with other form elements</h2>
       <MyFormSelect />
       <MyFormTextArea />
+
+      <h2 style={{backgroundColor:'plum'}}>9. useEffect: on initial render</h2>
+      <Timer></Timer>
+
+      <h2 style={{backgroundColor:'plum'}}>9. useEffect: dependent on a variable</h2>
+      <Counter></Counter>
+
+      <h2 style={{backgroundColor:'plum'}}>10. useEffect: api calling</h2>
+      <ShowDataCharacters></ShowDataCharacters>
+
+      <h2 style={{backgroundColor:'plum'}}>11. Rendering API data</h2>
+      <ShowDataInCards></ShowDataInCards>
     </div>
   );
 }
