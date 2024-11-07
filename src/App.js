@@ -61,14 +61,14 @@ function App() {
       <h2 style={{backgroundColor:'plum'}}>9. useEffect: on initial render</h2>
       <Timer></Timer>
 
-      <h2 style={{backgroundColor:'plum'}}>9. useEffect: dependent on a variable</h2>
+      <h2 style={{backgroundColor:'plum'}}>10. useEffect: dependent on a variable</h2>
       <Counter></Counter>
 
-      <h2 style={{backgroundColor:'plum'}}>10. useEffect: api calling</h2>
+      <h2 style={{backgroundColor:'plum'}}>11. useEffect: api calling</h2>
       {/*<ShowData></ShowData>*/}
       <ShowDataCharacters></ShowDataCharacters>
 
-      <h2 style={{backgroundColor:'plum'}}>11. Rendering API data</h2>
+      <h2 style={{backgroundColor:'plum'}}>12. Rendering API data</h2>
       <ShowDataInCards></ShowDataInCards>
     </div>
   );

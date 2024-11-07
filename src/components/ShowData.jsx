@@ -19,7 +19,7 @@ export default function ShowData() {
     <div>
       <h1>My Comment list</h1>
       <ul>
-        {list.map(item => <li key={item.id}>    {item.id},{item.email}     </li>)}
+        {list.map(item => <li key={item.id}>    {item.name} : {item.email}     </li>)}
       </ul>
     </div>
   )

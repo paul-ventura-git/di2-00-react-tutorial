@@ -16,10 +16,18 @@ export default function ShowDataCharacters() {
   }, [])
 
   return(
-    <div className="wrapper">
+    <div>
       <h1>My Comment Table</h1>
       <table className="table">
-      <thead></thead>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Species</td>
+          <td>Gender</td>
+          <td>Origin</td>
+          <td>Location</td>
+        </tr>
+      </thead>
       <tbody>
         {          
           list.map(item => {

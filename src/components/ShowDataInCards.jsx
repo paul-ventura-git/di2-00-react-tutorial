@@ -16,7 +16,7 @@ export default function ShowDataCharacters() {
   }, [])
 
   return(
-    <div className="wrapper">
+    <div>
      <h1>My List of Cards</h1>
      <ul>
         {          
