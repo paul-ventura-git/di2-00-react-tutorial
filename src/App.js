@@ -1,6 +1,5 @@
 import Baseball from "./components/T02Baseball";
 import Car from "./components/T01Car";
-import Counter from "./components/T10Counter";
 import Football from "./components/T02Football";
 import Garage from "./components/T01Garage";
 import Garden from "./components/T03Garden";
@@ -11,11 +10,13 @@ import MyForm from "./components/T06MyForm";
 import MyFormManyFields from "./components/T07MyFormManyFields";
 import MyFormSelect from "./components/T08MyFormSelect";
 import MyFormTextArea from "./components/T08MyFormTextArea";
+import Timer from "./components/T09Timer";
+import Counter from "./components/T10Counter";
 import ShowData from "./components/T11ShowData";
 import ShowDataCharacters from "./components/T11ShowDataCharacters";
 import ShowDataInTable from "./components/T12ShowDataInTable";
 import ShowDataInCards from "./components/T12ShowDataInCards";
-import Timer from "./components/T09Timer";
+import T13useContext from "./components/T13useContext"
 
 import v_genres from "./data/someData";
 
@@ -67,6 +68,9 @@ function App() {
       <h2 style={{backgroundColor:'plum'}}>12. Rendering API data</h2>
       {/*<ShowDataInCards></ShowDataInCards>*/}
       {/*<ShowDataInTable></ShowDataInTable>*/}
+
+      <h2 style={{backgroundColor:'plum'}}>13. useContext </h2>
+      <T13useContext></T13useContext>
     </div>
   );
 }
