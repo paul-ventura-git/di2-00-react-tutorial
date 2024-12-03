@@ -23,6 +23,7 @@ import T14useRef3 from "./components/T14useRef3.jsx"
 import T15useReducer from "./components/T15useReducer.jsx"
 import T16useCallbackIndex from "./components/T16useCallbackIndex.jsx";
 import T17useMemo from "./components/T17useMemo.jsx";
+import T18customHooksIndex from "./components/T18customHooksIndex.jsx";
 
 import v_genres from "./data/someData";
 
@@ -93,7 +94,7 @@ function App() {
       <T17useMemo></T17useMemo>
 
       <h2 style={{backgroundColor:'plum'}}>18. Custom Hooks </h2>
-      <T15useReducer></T15useReducer>
+      <T18customHooksIndex></T18customHooksIndex>
     </div>
   );
 }
