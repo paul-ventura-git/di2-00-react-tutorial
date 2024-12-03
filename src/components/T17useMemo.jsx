@@ -3,6 +3,7 @@ import { useState, useMemo } from "react";
 const T17useMemo = () => {
   const [count, setCount] = useState(0);
   const [todos, setTodos] = useState([]);
+  // Envolvemos con USEMEMO nuestro cálculo pesado sobre nuestro ESTADO COUNT
   const calculation = useMemo(() => expensiveCalculation(count), [count]);
 
   const increment = () => {

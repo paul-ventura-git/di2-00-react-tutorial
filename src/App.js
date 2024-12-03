@@ -22,6 +22,7 @@ import T14useRef2 from "./components/T14useRef2.jsx"
 import T14useRef3 from "./components/T14useRef3.jsx"
 import T15useReducer from "./components/T15useReducer.jsx"
 import T16useCallbackIndex from "./components/T16useCallbackIndex.jsx";
+import T17useMemo from "./components/T17useMemo.jsx";
 
 import v_genres from "./data/someData";
 
@@ -89,7 +90,7 @@ function App() {
       <T16useCallbackIndex></T16useCallbackIndex>
 
       <h2 style={{backgroundColor:'plum'}}>17. useMemo </h2>
-      <T15useReducer></T15useReducer>
+      <T17useMemo></T17useMemo>
 
       <h2 style={{backgroundColor:'plum'}}>18. Custom Hooks </h2>
       <T15useReducer></T15useReducer>
