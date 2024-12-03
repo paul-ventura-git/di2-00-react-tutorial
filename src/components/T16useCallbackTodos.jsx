@@ -1,5 +1,7 @@
 import { memo } from "react";
 
+// "Template con memoria"
+// No defino aquí ni TODOS ni ADDTODO
 const Todos = ({ todos, addTodo }) => {
   console.log("child render");
   return (
