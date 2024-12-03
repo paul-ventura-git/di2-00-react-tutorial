@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
+// The useRef Hook can also be used to keep track of previous state values.
+// This is because we are able to persist useRef values between renders.
 export default function T14useRef3() {
   const [inputValue, setInputValue] = useState("");
   const previousInputValue = useRef("");

@@ -20,6 +20,7 @@ import T13useContext from "./components/T13useContext"
 import T14useRef1 from "./components/T14useRef1.jsx"
 import T14useRef2 from "./components/T14useRef2.jsx"
 import T14useRef3 from "./components/T14useRef3.jsx"
+import T15useReducer from "./components/T15useReducer.jsx"
 
 import v_genres from "./data/someData";
 
@@ -77,8 +78,11 @@ function App() {
 
       <h2 style={{backgroundColor:'plum'}}>14. useRef </h2>
       <T14useRef1></T14useRef1>
-      <T14useRef2></T14useRef2>
+      <T14useRef2></T14useRef2><br></br>
       <T14useRef3></T14useRef3>
+
+      <h2 style={{backgroundColor:'plum'}}>15. useReducer </h2>
+      <T15useReducer></T15useReducer>
     </div>
   );
 }
