@@ -66,10 +66,10 @@ function App() {
 
       <h2 style={{backgroundColor:'plum'}}>11. useEffect: api calling</h2>
       {/*<ShowData></ShowData>*/}
-      <ShowDataCharacters></ShowDataCharacters>
+      {/*<ShowDataCharacters></ShowDataCharacters>*/}
 
       <h2 style={{backgroundColor:'plum'}}>12. Rendering API data</h2>
-      <ShowDataInCards></ShowDataInCards>
+      {/*<ShowDataInCards></ShowDataInCards>*/}
       {/*<ShowDataInTable></ShowDataInTable>*/}
     </div>
   );
