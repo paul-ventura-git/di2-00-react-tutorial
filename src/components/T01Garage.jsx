@@ -1,5 +1,5 @@
 import React from 'react'
-import Car from '../components/Car'
+import Car from './T01Car'
 
 export default function Garage(props) {
   const v_marcaCarro2 = "Mercedes";

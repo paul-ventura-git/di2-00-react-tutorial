@@ -1,21 +1,21 @@
-import Baseball from "./components/Baseball";
-import Car from "./components/Car";
-import Counter from "./components/Counter";
-import Football from "./components/Football";
-import Garage from "./components/Garage";
-import Garden from "./components/Garden";
-import Goal from "./components/Goal";
-import Kitchen from "./components/Kitchen";
-import Library from "./components/Library";
-import MyForm from "./components/MyForm";
-import MyFormManyFields from "./components/MyFormManyFields";
-import MyFormSelect from "./components/MyFormSelect";
-import MyFormTextArea from "./components/MyFormTextArea";
-import ShowData from "./components/ShowData";
-import ShowDataCharacters from "./components/ShowDataCharacters";
-import ShowDataInTable from "./components/ShowDataInTable";
-import ShowDataInCards from "./components/ShowDataInCards";
-import Timer from "./components/Timer";
+import Baseball from "./components/T02Baseball";
+import Car from "./components/T01Car";
+import Counter from "./components/T10Counter";
+import Football from "./components/T02Football";
+import Garage from "./components/T01Garage";
+import Garden from "./components/T03Garden";
+import Goal from "./components/T03Goal";
+import Kitchen from "./components/T04Kitchen";
+import Library from "./components/T05Library";
+import MyForm from "./components/T06MyForm";
+import MyFormManyFields from "./components/T07MyFormManyFields";
+import MyFormSelect from "./components/T08MyFormSelect";
+import MyFormTextArea from "./components/T08MyFormTextArea";
+import ShowData from "./components/T11ShowData";
+import ShowDataCharacters from "./components/T11ShowDataCharacters";
+import ShowDataInTable from "./components/T12ShowDataInTable";
+import ShowDataInCards from "./components/T12ShowDataInCards";
+import Timer from "./components/T09Timer";
 
 function App() {
   const my_cookware = ['Cutting board','Can opener','Measuring spoons'];
@@ -70,6 +70,7 @@ function App() {
 
       <h2 style={{backgroundColor:'plum'}}>12. Rendering API data</h2>
       <ShowDataInCards></ShowDataInCards>
+      {/*<ShowDataInTable></ShowDataInTable>*/}
     </div>
   );
 }
