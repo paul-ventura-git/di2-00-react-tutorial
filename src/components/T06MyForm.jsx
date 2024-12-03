@@ -7,12 +7,6 @@ export default function MyForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert(`The name you entered was: ${name}`)
-    /*
-    const node = document.createElement("div");
-    const textnode = document.createTextNode(name);
-    node.appendChild(textnode);
-    document.getElementById("filler").appendChild(node);
-    */
   }
 
   return (

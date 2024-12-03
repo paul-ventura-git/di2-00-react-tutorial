@@ -14,3 +14,5 @@ export default function Kitchen(props) {
       </div>
   )
 }
+
+// Ojo con esta forma de IF en JSX.
