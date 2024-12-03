@@ -4,13 +4,18 @@
 
 import { useState, useEffect, useRef } from "react";
 
-export default function T14useRef() {
+// useRef to track "application renders"
+export default function T14useRef1() {
   const [inputValue, setInputValue] = useState("");
   const count = useRef(0);
+  // It's like doing this: const count = {current: 0}. We can access the count by using count.current.
 
   useEffect(() => {
     count.current = count.current + 1;
   });
+
+  // Como consecuencia del cambio en INPUTVALUE se dispara el USEEFFECT
+  // El valor de COUNT se mantiene a pesar de lanzarse varias veces el USEEFFECT
 
   return (
     <>

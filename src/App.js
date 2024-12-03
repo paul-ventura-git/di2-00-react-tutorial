@@ -17,7 +17,9 @@ import ShowDataCharacters from "./components/T11ShowDataCharacters";
 import ShowDataInTable from "./components/T12ShowDataInTable";
 import ShowDataInCards from "./components/T12ShowDataInCards";
 import T13useContext from "./components/T13useContext"
-import T14useRef from "./components/T14useRef.jsx"
+import T14useRef1 from "./components/T14useRef1.jsx"
+import T14useRef2 from "./components/T14useRef2.jsx"
+import T14useRef3 from "./components/T14useRef3.jsx"
 
 import v_genres from "./data/someData";
 
@@ -73,8 +75,10 @@ function App() {
       <h2 style={{backgroundColor:'plum'}}>13. useContext </h2>
       <T13useContext></T13useContext>
 
-      <h2 style={{backgroundColor:'plum'}}>14. useContext </h2>
-      <T14useRef></T14useRef>
+      <h2 style={{backgroundColor:'plum'}}>14. useRef </h2>
+      <T14useRef1></T14useRef1>
+      <T14useRef2></T14useRef2>
+      <T14useRef3></T14useRef3>
     </div>
   );
 }
