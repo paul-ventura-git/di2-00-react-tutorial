@@ -6,8 +6,8 @@ import Todos from "./T16useCallbackTodos";
 // The useCallback Hook only runs when one of its dependencies update.
 // This can improve performance.
 // The useCallback and useMemo Hooks are similar. 
-// The main difference is that useMemo returns a memoized value 
-// and useCallback returns a memoized function. 
+// The main difference is that useMemo returns a memoized VALUE 
+// and useCallback returns a memoized FUNCTION. 
 
 export default function T16useCallbackIndex () {
   const [count, setCount] = useState(0);
@@ -18,10 +18,18 @@ export default function T16useCallbackIndex () {
   };
 
   // Use the useCallback Hook to prevent the Todos component from re-rendering needlessly
+  
   const addTodo = useCallback(() => {
+    alert("se re-renderizó")
     setTodos((t) => [...t, "New Todo"]);
   }, [todos]);
 
+  /*
+  const addTodo = () => {
+    alert("se re-renderizó")
+    setTodos((t) => [...t, "New Todo"]);
+  };
+*/
   return (
     <>
       <Todos todos={todos} addTodo={addTodo} />

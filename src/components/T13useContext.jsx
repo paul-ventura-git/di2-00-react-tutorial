@@ -1,19 +1,19 @@
 import { useState, createContext, useContext } from "react";
 
-const UserContext = createContext();
+const MyContext = createContext();
 
 export default function Component1() {
   const [user, setUser] = useState("Jesse Hall");
-
+  // Wrapper
   return (
-    <UserContext.Provider value={user}>
+    <MyContext.Provider value={user}> 
       <h1>{`Hello ${user}!`}</h1>
       <Component2 />
-    </UserContext.Provider>
+    </MyContext.Provider>
   );
 }
 
-function Component2() {
+function Component2(props) {
   return (
     <>
       <h1>Component 2</h1>
@@ -41,7 +41,7 @@ function Component4() {
 }
 
 function Component5() {
-  const user = useContext(UserContext);
+  const user = useContext(MyContext);
 
   return (
     <>

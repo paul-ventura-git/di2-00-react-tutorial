@@ -3,12 +3,12 @@ import { useReducer } from "react";
 const initialTodos = [
   {
     id: 1,
-    title: "Todo 1",
+    title: "Ir al banco",
     complete: false,
   },
   {
     id: 2,
-    title: "Todo 2",
+    title: "Gimnasio",
     complete: false,
   },
 ];
