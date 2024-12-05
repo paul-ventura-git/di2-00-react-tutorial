@@ -1,5 +1,5 @@
 // When you have component logic that needs to be used by multiple components, 
-// we can extract that logic to a custom Hook.
+// we can extract that logic to a CUSTOM HOOK.
 // Custom Hooks start with "use". Example: useFetch.
 
 import useFetch from "../hooks/T18customHooksUseFetch";

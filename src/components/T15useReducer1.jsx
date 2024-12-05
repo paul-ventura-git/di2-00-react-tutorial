@@ -11,7 +11,7 @@ const initialState = () => ({
 // 2. Segundo argumento del useReducer
 // reducer recibe un STATE (objeto de javascript) y un ACTION (string)
 const reducer = (state = initialState(), action = {}) => {
-  // TYPE es "lo que sucedió". Describe el tipo de acción que se requiere
+  // TYPE es "lo que sucedió". Describe el tipo de acción que se requiere (flag)
   if(action.type === 'INCREMENT'){
     // Devuelve el siguiente estado(NEXT STATE)
     return { count: state.count + 1 }

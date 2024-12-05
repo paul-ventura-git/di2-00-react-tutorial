@@ -29,7 +29,7 @@ export default function T16useCallbackIndex () {
     alert("se re-renderizó")
     setTodos((t) => [...t, "New Todo"]);
   };
-*/
+  */
   return (
     <>
       <Todos todos={todos} addTodo={addTodo} />
