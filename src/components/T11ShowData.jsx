@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { getList } from '../services/list';
+import { useEffect, useState } from 'react';
+import { getList } from '../services/list'; // Es una función que devuelve un array de objetos.
 
 export default function ShowData() {
   const [list, setList] = useState([]);
@@ -19,7 +19,11 @@ export default function ShowData() {
     <div>
       <h1>My Comment list</h1>
       <ul>
-        {list.map(item => <li key={item.id}>    {item.name} , {item.email}     </li>)}
+        {list.map(
+          item => <li key={item.id}>    
+            {item.id} ----- {item.name} ----- {item.email}     
+          </li>
+        )}
       </ul>
     </div>
   )

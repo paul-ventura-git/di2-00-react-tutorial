@@ -1,17 +1,15 @@
-import React from 'react'
-
 export default function Library(props) {
 
   return (
     <>
-      <h3>What genres have I got in my library?</h3>
+      <h3>¿Qué géneros de libros hay en mi biblioteca?</h3>
       <ul>
-        {props.genres.map((genre) => <Genre key={genre.id} description={genre.description} />)}
+        {props.genres.map((item) => <TiposDeLibros key={item.id} description={item.description} />)}
       </ul>
     </>
   )
 }
 
-function Genre(props) {
-  return <li>I have {props.description} books.</li>
+function TiposDeLibros(props) {
+  return <li>Tengo libros de {props.description}.</li>
 }

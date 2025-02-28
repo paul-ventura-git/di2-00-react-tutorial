@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getList } from '../services/list';
 
 export default function ShowDataInTable() {

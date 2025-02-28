@@ -1,9 +1,18 @@
 import React from 'react'
 
+/**
+ * Aquí definimos:
+ * La posición de los props,
+ * El identificador de cada prop
+ * @param {*} props 
+ * @returns 
+ */
 export default function Car(props) {
   return (
     <>
-      <h3>Hi, I'm a {props.colorCarro} {props.marcaCarro} car!</h3>
+      <h3>¡Hola, soy un {props.marcaCarro} {props.colorCarro} !</h3>
     </>
   )
 }
+
+

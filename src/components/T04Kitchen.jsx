@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Kitchen(props) {
   const v_utensilios = props.utensilios;
   return (

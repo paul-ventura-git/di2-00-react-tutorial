@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getList } from '../services/characters';
 
 export default function ShowDataCharacters() {
@@ -17,12 +17,12 @@ export default function ShowDataCharacters() {
 
   return(
     <div>
-     <h1>My List of Cards</h1>
+     <h1>My List of Cards (Rick and Morty)</h1>
      <ul>
         {          
           arregloDeObjetos.map(item => {
             return (
-              <div key={item.id} className="card" style={{width: "18rem"}}>
+              <div key={item.id} className="card mb-4" style={{width: "18rem"}}>
                 <img src={item.image} className="card-img-top" alt="..."></img>
                 <div className="card-body">
                   <h5 className="card-title">{item.name}</h5>

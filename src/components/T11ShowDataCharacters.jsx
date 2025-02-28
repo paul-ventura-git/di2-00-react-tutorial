@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getList } from '../services/characters';
 
 export default function ShowDataCharacters() {
@@ -17,33 +17,35 @@ export default function ShowDataCharacters() {
 
   return(
     <div>
-      <h1>My Comment Table</h1>
+      <h1>My Rick and Morty list of characters</h1>
       <table className="table">
-      <thead>
-        <tr>
-          <td>Name</td>
-          <td>Species</td>
-          <td>Gender</td>
-          <td>Origin</td>
-          <td>Location</td>
-        </tr>
-      </thead>
-      <tbody>
-        {          
-          list.map(item => {
-            return (
-              <tr key={item.id}>
-                <td>{item.name}</td>
-                <td>{item.species}</td>
-                <td>{item.gender}</td>
-                <td>{item.origin.name}</td>
-                <td>{item.location.name}</td>
-              </tr>
+        <thead>
+          <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Species</td>
+            <td>Gender</td>
+            <td>Origin</td>
+            <td>Location</td>
+          </tr>
+        </thead>
+        <tbody>
+          {          
+            list.map(item => {
+              return (
+                <tr key={item.id}>
+                  <td>{item.id}</td>
+                  <td>{item.name}</td>
+                  <td>{item.species}</td>
+                  <td>{item.gender}</td>
+                  <td>{item.origin.name}</td>
+                  <td>{item.location.name}</td>
+                </tr>
+              )
+            }
             )
           }
-          )
-        }
-      </tbody>
+        </tbody>
       </table>
    </div>
   )

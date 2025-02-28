@@ -29,23 +29,23 @@ import T18customHooksIndex from "./components/T18customHooksIndex.jsx"
 import v_genres from "./data/someData";
 
 function App() {
-  const my_cookware = ['Cutting board','Can opener','Measuring spoons'];
+  const my_cookware = ['Cutting board','Can opener','Measuring spoons', 'Fry pan'];
 
   return (
     <div className="container">
-      <h1>Tutorial de React</h1>
+      <h1>Tutorial de React 2025</h1>
 
       <h2 style={{backgroundColor:'lightBlue'}}>1. Props</h2>
-      <Car colorCarro="purple" marcaCarro="Toyota" />
-      <Garage tamanioGarage="big" />
+      <Car colorCarro="rojo" marcaCarro="Ferrari"/> {/* colorCarro="verde" marcaCarro="Lamborghini" /> */}
+      <Garage tamanioGarage="grande" />
 
-      <h2 style={{backgroundColor:'lightBlue'}}>2. Props with events (functions)</h2>
+      <h2 style={{backgroundColor:'lightBlue'}}>2. Props with events (functions) [Event handlers]</h2>
       <Football />
       <Baseball />
 
       <h2 style={{backgroundColor:'lightBlue'}}>3. Props with booleans</h2>
-      <Goal esGol={NaN}/>
-      <Garden arboles={null}/>
+      <Goal esGol={16549875465}/> {/* falsy values: NaN, undefined, null, 0, false*/}
+      <Garden arboles={NaN}/>
 
       <h2 style={{backgroundColor:'lightBlue'}}>4. Props with arrays</h2> 
       <Kitchen utensilios={my_cookware} />
@@ -71,10 +71,10 @@ function App() {
 
       <h2 style={{backgroundColor:'plum'}}>11. useEffect: api calling</h2>
       {/*<ShowData></ShowData>*/}
-      {/*<ShowDataCharacters></ShowDataCharacters>*/}
+      <ShowDataCharacters></ShowDataCharacters>
 
       <h2 style={{backgroundColor:'plum'}}>12. Rendering API data</h2>
-      {/*<ShowDataInCards></ShowDataInCards>*/}
+      <ShowDataInCards></ShowDataInCards>
       {/*<ShowDataInTable></ShowDataInTable>*/}
 
       <h2 style={{backgroundColor:'plum'}}>13. useContext </h2>

@@ -6,7 +6,7 @@ export default function Football() {
   }
 
   return (
-    <button onClick={()=>shoot("Se ha marcado un gol!")}>Football button!</button>
+    <button onClick={()=>shoot("Creemos que se ha marcado un gol!")}>Football button!</button>
   )
 }
 
