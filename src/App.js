@@ -1,32 +1,34 @@
-import Baseball from "./components/T02Baseball"
-import Car from "./components/T01Car"
-import Football from "./components/T02Football"
-import Garage from "./components/T01Garage"
-import Garden from "./components/T03Garden"
-import Goal from "./components/T03Goal"
-import Kitchen from "./components/T04Kitchen"
-import Library from "./components/T05Library"
-import MyForm from "./components/T06MyForm"
-import MyFormManyFields from "./components/T07MyFormManyFields"
-import MyFormSelect from "./components/T08MyFormSelect"
-import MyFormTextArea from "./components/T08MyFormTextArea"
-import Timer from "./components/T09Timer"
-import Counter from "./components/T10Counter"
-import ShowData from "./components/T11ShowData"
-import ShowDataCharacters from "./components/T11ShowDataCharacters"
-import ShowDataInTable from "./components/T12ShowDataInTable"
-import ShowDataInCards from "./components/T12ShowDataInCards"
-import T13useContext from "./components/T13useContext"
-import T14useRef1 from "./components/T14useRef1.jsx"
-import T14useRef2 from "./components/T14useRef2.jsx"
-import T14useRef3 from "./components/T14useRef3.jsx"
-import T15useReducer1 from "./components/T15useReducer1.jsx"
-import T15useReducer2 from "./components/T15useReducer2.jsx"
-import T16useCallbackIndex from "./components/T16useCallbackIndex.jsx"
-import T17useMemo from "./components/T17useMemo.jsx"
-import T18customHooksIndex from "./components/T18customHooksIndex.jsx"
+import {
+  Baseball,
+  Car,
+  Football,
+  Garage,
+  Garden,
+  Goal,
+  Kitchen,
+  Library,
+  MyForm,
+  MyFormManyFields,
+  MyFormSelect,
+  MyFormTextArea,
+  Timer,
+  Counter,
+  ShowData,
+  ShowDataCharacters,
+  ShowDataInTable,
+  ShowDataInCards,
+  T13useContext,
+  T14useRef1,
+  T14useRef2,
+  T14useRef3,
+  T15useReducer1,
+  T15useReducer2,
+  T16useCallbackIndex,
+  T17useMemo,
+  T18customHooksIndex,
+} from "./components";
 
-import v_genres from "./data/someData";
+import { v_genres } from "./data";
 
 function App() {
   const my_cookware = ['Cutting board','Can opener','Measuring spoons', 'Fry pan', 'Colander', 'Grater', 'Peeler', 'Whisk', 'Tongs', 'Ladle'];

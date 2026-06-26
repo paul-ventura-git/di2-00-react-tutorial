@@ -24,7 +24,8 @@ export default function T14useRef1() {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
-      <h1>Render Count: {count.current}</h1>
+      <h2>Render Count: {count.current}</h2>
+      <hr></hr>
     </>
   );
 }

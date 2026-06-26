@@ -1,0 +1,1 @@
+export { default as v_genres } from "./someData";
