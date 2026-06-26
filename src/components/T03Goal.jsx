@@ -7,10 +7,10 @@ export default function Goal(props) {
 }
 
 function MadeGoal() {
-  return <h3>The value of props is TRUE!</h3>;
+  return <h3>The value of props is TRUTHSY VALUE!</h3>;
 }
 
 function MissedGoal() {
-  return <h3>The value of props is FALSE!</h3>;
+  return <h3>The value of props is FALSY VALUE!</h3>;
 }
 

@@ -29,23 +29,23 @@ import T18customHooksIndex from "./components/T18customHooksIndex.jsx"
 import v_genres from "./data/someData";
 
 function App() {
-  const my_cookware = ['Cutting board','Can opener','Measuring spoons', 'Fry pan'];
+  const my_cookware = ['Cutting board','Can opener','Measuring spoons', 'Fry pan', 'Colander', 'Grater', 'Peeler', 'Whisk', 'Tongs', 'Ladle'];
 
   return (
     <div className="container">
       <h1>Tutorial de React 2025</h1>
 
       <h2 style={{backgroundColor:'lightBlue'}}>1. Props</h2>
-      <Car colorCarro="rojo" marcaCarro="Ferrari"/> {/* colorCarro="verde" marcaCarro="Lamborghini" /> */}
+      <Car colorCarro="mostaza" marcaCarro="BYD"/> {/* colorCarro="verde" marcaCarro="Lamborghini" /> */}
       <Garage tamanioGarage="grande" />
 
       <h2 style={{backgroundColor:'lightBlue'}}>2. Props with events (functions) [Event handlers]</h2>
-      <Football />
       <Baseball />
+      <Football />
 
       <h2 style={{backgroundColor:'lightBlue'}}>3. Props with booleans</h2>
-      <Goal esGol={16549875465}/> {/* falsy values: NaN, undefined, null, 0, false*/}
-      <Garden arboles={NaN}/>
+      <Goal esGol={0}/> {/* falsy values: NaN, undefined, null, 0, false, "" */}
+      <Garden arboles={"123"}/>
 
       <h2 style={{backgroundColor:'lightBlue'}}>4. Props with arrays</h2> 
       <Kitchen utensilios={my_cookware} />

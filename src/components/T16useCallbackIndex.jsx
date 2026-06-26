@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 import Todos from "./T16useCallbackTodos";
 
-// The React useCallback Hook returns a memoized callback function.
+// The React useCallback Hook returns a MEMOIZED CALLBACK FUNCTION.
 // Think of memoization as caching a value so that it does not need to be recalculated.
 // The useCallback Hook only runs when one of its dependencies update.
 // This can improve performance.
@@ -14,14 +14,14 @@ export default function T16useCallbackIndex () {
   const [todos, setTodos] = useState([]);
 
   const increment = () => {
+    alert("se re-renderizó todo el componente"); 
     setCount((c) => c + 1);
   };
 
   // Use the useCallback Hook to prevent the Todos component from re-rendering needlessly
   
-  const addTodo = useCallback(() => {
-    alert("se re-renderizó")
-    setTodos((t) => [...t, "New Todo"]);
+  const addTodo = useCallback(() => { 
+    setTodos((t) => [...t, "Nueva tarea agregada"]);
   }, [todos]);
 
   /*

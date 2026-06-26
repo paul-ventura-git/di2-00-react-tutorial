@@ -4,13 +4,17 @@ const T17useMemo = () => {
   const [count, setCount] = useState(0);
   const [todos, setTodos] = useState([]);
   // Envolvemos con USEMEMO nuestro cálculo pesado sobre nuestro ESTADO COUNT
+  // para que no se vuelva a ejecutar cada vez que se renderice el componente
+  // El segundo argumento de useMemo es un array de dependencias, que indica cuándo debe
+  // volver a calcular el valor memorizado. En este caso, solo cuando 'count' cambie.
+  // Si no se proporciona, se calculará en cada renderizado.
   const calculation = useMemo(() => expensiveCalculation(count), [count]);
 
   const increment = () => {
     setCount((c) => c + 1);
   };
   const addTodo = () => {
-    setTodos((t) => [...t, "New Todo"]);
+    setTodos((t) => [...t, "Nueva tarea agregada"]);
   };
 
   return (

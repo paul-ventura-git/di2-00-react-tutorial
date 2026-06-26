@@ -5,13 +5,13 @@ export default function Counter() {
   const [calculation, setCalculation] = useState(0);
 
   useEffect(() => {
-    setCalculation(() => count * 3);
+    setCalculation(() => count * 3); // funcion mutator del estado calculation
   }, [count]); // <- add the count variable here
 
   return (
     <>
       <p>Count: {count}</p>
-      <button onClick={() => setCount((c) => c + 1)}> + </button>
+      <button onClick={() => setCount((count) => count + 1)}> + </button>
       <p>Calculation: {calculation}</p>
     </>
   );

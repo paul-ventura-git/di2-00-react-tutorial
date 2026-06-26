@@ -9,7 +9,7 @@ export default function Garage(props) {
     <div>
       <h3> ¿Quién vive en mi garage {props.tamanioGarage} ?</h3>
       <Car marcaCarro={ v_marcaCarro1 } colorCarro={v_colorCarro1}>::Car One::</Car>  
-      <Car marcaCarro="Nissan" colorCarro="Plata">::Car Two::</Car>          
+      <Car marcaCarro="Ferrari" colorCarro="Rojo">::Car Two::</Car>          
     </div>
   )
 }
